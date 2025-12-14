@@ -3,12 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-* {
-  font-family: 'Playfair Display', serif;
 }
 
+/* ===== GLOBAL FONT (ENTIRE WEBSITE) ===== */
 body {
   background: #0f172a;
   color: #e2e8f0;
@@ -119,25 +116,6 @@ body {
 #skills {
   text-align: center;
   padding: 60px 20px;
-}
-
-.section-title {
-  font-size: 2rem;
-  color: #38bdf8;
-  margin-bottom: 30px;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* ===== Skills Section ===== */
-#skills {
-  text-align: center;
-  padding: 60px 20px;
   background-color: #0f172a;
 }
 
@@ -147,7 +125,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Skills Container */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -168,20 +145,16 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   transition: all 0.4s ease;
   cursor: default;
-
-  /* Animation initial state */
   opacity: 0;
   transform: translateY(40px);
 }
 
-/* Hover effect */
 .skill:hover {
   background: #334155;
   transform: translateY(-4px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Animation visible state */
 .skill.visible {
   opacity: 1;
   transform: translateY(0);
@@ -198,7 +171,6 @@ body {
     font-size: 1.6rem;
   }
 }
-
 
 /* ===== About Section ===== */
 .about-section {
@@ -335,4 +307,3 @@ textarea {
     display: none;
   }
 }
-
