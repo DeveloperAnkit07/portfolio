@@ -19,6 +19,27 @@ h1, h2, h3, .hero-title, .section-title {
   font-variation-settings: 'wght' 500;
 }
 
+/* Global with new Playfair */
+body {
+  font-family: 'Playfair', serif;
+}
+
+/* Headings with variable optical size for hero scale */
+h1, h2, h3, .hero-title, .section-title {
+  font-family: 'Playfair', serif;
+  font-variation-settings: 'opsz' 40, 'wght' 600; /* Larger optical size for headings */
+}
+
+.hero-sub, .about-text p {
+  font-family: 'Playfair', serif;
+  font-variation-settings: 'opsz' 18, 'wght' 400; /* Smaller, refined body text */
+}
+
+.skill, .badge {
+  font-family: 'Playfair', serif;
+  font-variation-settings: 'wght' 500;
+}
+
 /* ===== Reset & Base ===== */
 * {
   margin: 0;
@@ -328,4 +349,5 @@ textarea {
     display: none;
   }
 }
+
 
