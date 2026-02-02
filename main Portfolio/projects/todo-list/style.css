@@ -1,3 +1,23 @@
+/* Global with new Playfair */
+body {
+  font-family: 'Playfair', serif;
+}
+
+/* Headings with variable optical size for hero scale */
+h1, h2, h3, .hero-title, .section-title {
+  font-family: 'Playfair', serif;
+  font-variation-settings: 'opsz' 40, 'wght' 600; /* Larger optical size for headings */
+}
+
+.hero-sub, .about-text p {
+  font-family: 'Playfair', serif;
+  font-variation-settings: 'opsz' 18, 'wght' 400; /* Smaller, refined body text */
+}
+
+.skill, .badge {
+  font-family: 'Playfair', serif;
+  font-variation-settings: 'wght' 500;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #0f172a;
@@ -184,3 +204,4 @@ h1 {
     font-size: 0.8rem;
   }
 }
+
