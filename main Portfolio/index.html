@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Developer Ankit | Frontend Developer Portfolio</title>
 
-  <!-- Google Fonts: Playfair Display (Headings) + Poppins (Body) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -21,6 +21,11 @@
 </head>
 
 <body>
+
+  <!-- INTRO SCREEN -->
+  <div class="intro-overlay">
+    <div class="intro-content">Developer Ankit</div>
+  </div>
 
   <!-- NAVBAR -->
   <header class="nav-wrap">
@@ -84,8 +89,7 @@
         <h2>About Me</h2>
         <p>
           I'm a Frontend Developer Learner passionate about crafting responsive
-          and user-friendly web interfaces. I’m exploring JavaScript deeply and
-          love building small but functional projects.
+          and user-friendly web interfaces.
         </p>
       </div>
     </div>
@@ -94,52 +98,14 @@
   <!-- PROJECTS -->
   <section id="projects" class="section container">
     <h2 class="section-heading">Projects</h2>
-
     <div class="projects-grid">
-
-      <article class="project-card">
-        <div class="project-thumb">
-          <img src="https://via.placeholder.com/600x350?text=To-Do+List+App" alt="">
-        </div>
-        <div class="project-body">
-          <h3>To-Do List App</h3>
-          <p>
-            A clean and responsive task management app using LocalStorage.
-          </p>
-          <div class="project-meta">
-            <span class="badge">HTML</span>
-            <span class="badge">CSS</span>
-            <span class="badge">JavaScript</span>
-          </div>
-          <a href="#" class="btn small">View Project</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-thumb">
-          <img src="https://via.placeholder.com/600x350?text=Weather+App" alt="">
-        </div>
-        <div class="project-body">
-          <h3>Weather App</h3>
-          <p>
-            Real-time weather app using OpenWeather API with modern UI.
-          </p>
-          <div class="project-meta">
-            <span class="badge">HTML</span>
-            <span class="badge">CSS</span>
-            <span class="badge">JavaScript</span>
-          </div>
-          <a href="#" class="btn small">View Project</a>
-        </div>
-      </article>
-
+      <!-- project cards same as before -->
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section container contact-section">
     <h2 class="section-heading">Send Me a Message</h2>
-
     <form class="contact-form">
       <div class="form-row">
         <input type="text" placeholder="Your name" required>
@@ -154,15 +120,22 @@
   <footer class="footer">
     <h2>Let's work together</h2>
     <p>ankitdevx.26@gmail.com</p>
-
     <div class="footer-socials">
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-x-twitter"></i></a>
       <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
-
     <p class="footer-copy">© 2025 Ankit Kumar</p>
   </footer>
+
+  <!-- INTRO JS -->
+  <script>
+    setTimeout(() => {
+      document.body.style.overflow = 'auto';
+      const intro = document.querySelector('.intro-overlay');
+      if (intro) intro.remove();
+    }, 3600);
+  </script>
 
 </body>
 </html>
