@@ -49,4 +49,12 @@ if (skills.length > 0) {
 
   skills.forEach((skill) => observer.observe(skill));
 }
+  <!-- INTRO JS -->
+  <script>
+    setTimeout(() => {
+      document.body.style.overflow = 'auto';
+      const intro = document.querySelector('.intro-overlay');
+      if (intro) intro.remove();
+    }, 3600);
+  </script>
 
