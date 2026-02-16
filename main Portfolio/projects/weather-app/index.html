@@ -4,26 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather App | Developer Ankit</title>
-
-  <!-- Playfair Display Font -->
+  <!-- Poppins Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>🌦 Weather App</h1>
+    
+    <!-- Preview Image Section - NEW -->
+    <div class="preview-section">
+      <p class="preview-label">App Preview - Click to enlarge</p>
+      <div class="preview-wrapper" id="previewWrapper">
+        <img 
+          src="weather-preview.png" 
+          alt="Weather App Preview Screenshot" 
+          class="preview-image"
+        />
+        <div class="preview-hover-overlay">
+          <span>🔍 Click to view full size</span>
+        </div>
+      </div>
+    </div>
 
     <div class="search-box">
       <input type="text" id="cityInput" placeholder="Enter city name..." />
       <button id="searchBtn">Search</button>
     </div>
-
     <div id="weatherInfo" class="weather-info">
       <p>Enter a city name to see weather details 🌍</p>
     </div>
+  </div>
+
+  <!-- Image Modal - NEW -->
+  <div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Weather App Preview">
+    <div class="modal-caption">Weather App Preview - Press ESC or click outside to close</div>
   </div>
 
   <script src="script.js"></script>
